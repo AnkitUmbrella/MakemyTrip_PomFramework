@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32656" started-at="2019-05-03T11:20:14Z" finished-at="2019-05-03T11:20:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32656" started-at="2019-05-03T11:20:14Z" finished-at="2019-05-03T11:20:47Z">
+      <class name="Naveen.NaveenCodingChallenge2.testcases.MMTTestCases">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Naveen.NaveenCodingChallenge2.testcases.MMTTestCases@7113b13f]" name="setup" is-config="true" duration-ms="8019" started-at="2019-05-03T11:20:14Z" finished-at="2019-05-03T11:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="FlightCheck()[pri:1, instance:Naveen.NaveenCodingChallenge2.testcases.MMTTestCases@7113b13f]" name="FlightCheck" duration-ms="12655" started-at="2019-05-03T11:20:22Z" finished-at="2019-05-03T11:20:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightCheck -->
+        <test-method status="PASS" signature="GetAllFlights()[pri:2, instance:Naveen.NaveenCodingChallenge2.testcases.MMTTestCases@7113b13f]" name="GetAllFlights" duration-ms="4175" started-at="2019-05-03T11:20:35Z" finished-at="2019-05-03T11:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllFlights -->
+        <test-method status="PASS" signature="ExtractToptenFlights()[pri:3, instance:Naveen.NaveenCodingChallenge2.testcases.MMTTestCases@7113b13f]" name="ExtractToptenFlights" duration-ms="1322" started-at="2019-05-03T11:20:39Z" finished-at="2019-05-03T11:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtractToptenFlights -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Naveen.NaveenCodingChallenge2.testcases.MMTTestCases@7113b13f]" name="teardown" is-config="true" duration-ms="6388" started-at="2019-05-03T11:20:40Z" finished-at="2019-05-03T11:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Naveen.NaveenCodingChallenge2.testcases.MMTTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
