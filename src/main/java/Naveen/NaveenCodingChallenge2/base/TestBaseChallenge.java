@@ -143,10 +143,21 @@ public class TestBaseChallenge {
 		//Scroll Bottom of Page
 		public void scrolldownpage() {
 			JavascriptExecutor js = (JavascriptExecutor) driver;  
-			js.executeScript("window.scrollBy(0,1000)");
+			js.executeScript("window.scrollBy(0,200)");
 			
 			
 		}
+		
+		
+		
+		 //focus
+ 		public void focus( String elementId) {
+ 		WebDriver driver = new FirefoxDriver();
+ 		JavascriptExecutor jse = (JavascriptExecutor) driver;
+ 		jse.executeScript("document.getElementById('"+ elementId +"').focus();");
+ 		}
+		
+		
 		
 		
 }

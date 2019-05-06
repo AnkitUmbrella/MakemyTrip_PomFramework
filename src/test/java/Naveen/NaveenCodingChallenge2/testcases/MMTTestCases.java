@@ -21,6 +21,7 @@ public class MMTTestCases extends TestBaseChallenge {
 	 
 	  Homepage home;  // create object of nonstatic method to access methods
 	  ExtentReports rep;
+	  date d = new date();
 	
 	 public MMTTestCases() {
 		 super(); //calling parent class constructor or method using super keyword
@@ -53,9 +54,9 @@ public class MMTTestCases extends TestBaseChallenge {
 	    home.TocityInput("Bangalore");
 	    test.log(LogStatus.PASS, "Providing From and To city");
 	    
-	  
-		home.SelectDates("Fri May 03 2019");
-		home.SelectDates("Thu May 09 2019");
+	    
+		home.SelectDates(d.Getcurr()); // Current Date
+		home.SelectDates(d.Afterdate()); // After Date (CurrentDate +7)
 		
 		test.log(LogStatus.PASS, "Selecting Dates from calender");
 		takeScreenShot();
@@ -100,26 +101,20 @@ public class MMTTestCases extends TestBaseChallenge {
 	
 	
 	
-	/*
+	
 	
 	@Test(priority=4)
-	public void ClickAgentName() {
+	public void PriceAllradiobutton() throws InterruptedException {
 	
-	 	
-     String name1= home.agentclick();
-     home.DetailPageName();
-     //String expectedname1= home.DetailPageName();
-     //Assert.assertEquals(name1, expectedname1);
-     
- 	takeScreenShot();
-	test.log(LogStatus.PASS, "Compare Agent name");
+		System.out.println("****************Price for all radiobuttons data");
+		home.Selectingallradiobutton();
 
 
 		
 		
 	}
 	
-	*/
+
 	
 	@AfterTest
 	public void teardown() throws InterruptedException {

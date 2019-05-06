@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 //@author : Ankit Lohia
 
@@ -72,6 +74,11 @@ public class Homepage extends TestBaseChallenge {
 	//span[@class='labeltext']
 	@FindBy(xpath="//*[@id='fli_filter__stops']/span[2]/label/span[1]")
 	WebElement Onestopfilter;
+	
+	//selecting all radiobuttons
+	
+	@FindBy(xpath="//div[@class='paddLR15 make_flex append_bottom7']/span[1]")
+	List<WebElement> RadioBtnAll;
 	
 	
 	
@@ -163,7 +170,31 @@ public class Homepage extends TestBaseChallenge {
 
         }
    }
+   
+   
+      
+ 		
+ 		
+
+   
+   public void Selectingallradiobutton() throws InterruptedException {
+	   Actions act= new Actions(driver);
+	   scrolldownpage();
+	   int j=0;
+	   while(j<=RadioBtnAll.size()) {
+		   Thread.sleep(2000);
+		Actions wb= act.moveToElement(RadioBtnAll.get(j));
+		 // focus(RadioBtnAll.get(j));
+		wb.click().build().perform();
+		   Thread.sleep(2000);
+		   scrolldownpage();
+		   //String price= driver.findElement(By.xpath("//span[@class='INR']")).getText();
+		   //System.out.println(price);
+	   }	   
+	   
+   
    }
+}
    
    
 

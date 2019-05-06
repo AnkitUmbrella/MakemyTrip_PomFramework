@@ -10,8 +10,6 @@ import org.testng.annotations.Test;
 
 public class date {
 
-	
-
 	public String datetest() {
 		
 		 
@@ -42,16 +40,45 @@ public class date {
 	}
 	
 	
-  @Test
-	public void Getcurr(){
+  // @Test(priority=1)
+	public String Getcurr(){
 		
 		String x= getcurrentday();
 		String y= datetest();
-		System.out.println(x);
-		System.out.println(y);
+		//System.out.println(x);
+		//System.out.println(y);
 		String z=x+" "+y;
+		z= z.replaceAll("/", " ");
 		
-		System.out.println(z);
+		//System.out.println(z);
+		return z;
+		
+	}
+	
+	
+	
+	
+	//@Test(priority=2)
+   public String Afterdate(){
+		
+		String a1= getcurrentday();
+		String a2= datetest();
+		a2= a2.replaceAll("/", " ");
+		//System.out.println(a2);
+		String month= a2.substring(0, 3);
+		String date = a2.substring(4, 6);
+		String year = a2.substring(7, 11);
+		
+		String EarlierDate= month+" "+date+" "+year;
+		
+		int datenext= Integer.parseInt(date);
+		datenext= datenext+7;
+		//System.out.println(datenext);
+		
+		String NewDate= month+" "+datenext+" "+year;
+        String z= a1+" "+NewDate;
+        //System.out.println(z);
+        return z;
 		
 	}
 	

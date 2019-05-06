@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Naveen.NaveenCodingChallenge2.testcases.MMTTestCases">
+      <class name="Naveen.NaveenCodingChallenge2.testcases.date">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="ExtractToptenFlights"/>
+          <include name="Afterdate"/>
         </methods>
-      </class> <!-- Naveen.NaveenCodingChallenge2.testcases.MMTTestCases -->
+      </class> <!-- Naveen.NaveenCodingChallenge2.testcases.date -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
